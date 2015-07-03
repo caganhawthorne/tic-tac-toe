@@ -14,6 +14,9 @@
 		EFC5E0471B457BC900C1C2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC5E0451B457BC900C1C2E2 /* LaunchScreen.storyboard */; };
 		EFC5E0521B457BC900C1C2E2 /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E0511B457BC900C1C2E2 /* Tic_Tac_ToeTests.swift */; };
 		EFC5E05D1B457BCA00C1C2E2 /* Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E05C1B457BCA00C1C2E2 /* Tic_Tac_ToeUITests.swift */; };
+		EFC5E06B1B45898500C1C2E2 /* TwoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E06A1B45898500C1C2E2 /* TwoPlayerViewController.swift */; };
+		EFC5E06D1B45899900C1C2E2 /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E06C1B45899900C1C2E2 /* SinglePlayerViewController.swift */; };
+		EFC5E0711B45A9FF00C1C2E2 /* GridImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E0701B45A9FF00C1C2E2 /* GridImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		EFC5E0581B457BC900C1C2E2 /* Tic Tac ToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac ToeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC5E05C1B457BCA00C1C2E2 /* Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
 		EFC5E05E1B457BCA00C1C2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC5E06A1B45898500C1C2E2 /* TwoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoPlayerViewController.swift; sourceTree = "<group>"; };
+		EFC5E06C1B45899900C1C2E2 /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
+		EFC5E0701B45A9FF00C1C2E2 /* GridImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		EFC5E0301B457BC800C1C2E2 = {
 			isa = PBXGroup;
 			children = (
+				EFC5E0701B45A9FF00C1C2E2 /* GridImage.swift */,
 				EFC5E03B1B457BC900C1C2E2 /* Tic Tac Toe */,
 				EFC5E0501B457BC900C1C2E2 /* Tic Tac ToeTests */,
 				EFC5E05B1B457BCA00C1C2E2 /* Tic Tac ToeUITests */,
@@ -99,6 +106,8 @@
 			children = (
 				EFC5E03C1B457BC900C1C2E2 /* AppDelegate.swift */,
 				EFC5E03E1B457BC900C1C2E2 /* ViewController.swift */,
+				EFC5E06A1B45898500C1C2E2 /* TwoPlayerViewController.swift */,
+				EFC5E06C1B45899900C1C2E2 /* SinglePlayerViewController.swift */,
 				EFC5E0401B457BC900C1C2E2 /* Main.storyboard */,
 				EFC5E0431B457BC900C1C2E2 /* Assets.xcassets */,
 				EFC5E0451B457BC900C1C2E2 /* LaunchScreen.storyboard */,
@@ -256,6 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC5E03F1B457BC900C1C2E2 /* ViewController.swift in Sources */,
+				EFC5E06B1B45898500C1C2E2 /* TwoPlayerViewController.swift in Sources */,
+				EFC5E0711B45A9FF00C1C2E2 /* GridImage.swift in Sources */,
+				EFC5E06D1B45899900C1C2E2 /* SinglePlayerViewController.swift in Sources */,
 				EFC5E03D1B457BC900C1C2E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +495,7 @@
 				EFC5E0631B457BCA00C1C2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFC5E0641B457BCA00C1C2E2 /* Build configuration list for PBXNativeTarget "Tic Tac ToeTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +504,7 @@
 				EFC5E0661B457BCA00C1C2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFC5E0671B457BCA00C1C2E2 /* Build configuration list for PBXNativeTarget "Tic Tac ToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +513,7 @@
 				EFC5E0691B457BCA00C1C2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
