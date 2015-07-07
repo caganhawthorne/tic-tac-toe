@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GWK-wJ-Dn4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -115,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192" y="307"/>
+            <point key="canvasLocation" x="1193" y="316"/>
         </scene>
         <!--Single Player View Controller-->
         <scene sceneID="3ev-es-g1r">
@@ -129,25 +128,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ttt_board" translatesAutoresizingMaskIntoConstraints="NO" id="Vzd-ne-LHi">
-                                <rect key="frame" x="177" y="173" width="247" height="254"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Vzd-ne-LHi" secondAttribute="height" multiplier="247:254" id="0vD-K6-frZ"/>
-                                    <constraint firstAttribute="width" constant="247" id="9bJ-ik-ukV"/>
-                                    <constraint firstAttribute="height" constant="254" id="LJE-kL-tDt"/>
-                                </constraints>
-                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LkW-h3-2h3">
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWf-od-1Tv" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="9" y="6" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wo-Fg-hA5" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="89" y="6" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9g-d6-L2Q" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="6" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQy-dK-1vU" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="9" y="85" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymm-MK-Oun" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="86" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8L-D0-LGJ" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="85" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5z-us-24e" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="9" y="165" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jnq-ZC-Bfg" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="89" y="165" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTr-fL-k0j" customClass="GridImage" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="165" width="75" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ttt_board" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-0V-y1D">
+                                        <rect key="frame" x="12" y="8" width="231" height="228"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Single Player Deathmatch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gar-M8-28R">
+                                <rect key="frame" x="160" y="90" width="280" height="57"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.48522977950000001" blue="0.085036211730000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Drag the Doge!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mw-Vj-Xp1">
+                                <rect key="frame" x="227" y="571" width="146" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.48522977950000001" blue="0.085036211730000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fbh-u9-L3k">
+                                <rect key="frame" x="226" y="449" width="148" height="108"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="doge" translatesAutoresizingMaskIntoConstraints="NO" id="LoN-gi-4FG">
+                                        <rect key="frame" x="37" y="16" width="75" height="75"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="AWb-zB-kM6"/>
+                                            <constraint firstAttribute="width" constant="75" id="Pbq-1E-tDZ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ndT-Gj-uBo" appends="YES" id="GRv-7M-KQT"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.87706180560000002" green="0.95325142060000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Vzd-ne-LHi" firstAttribute="centerX" secondItem="4iH-Bx-7Kr" secondAttribute="centerX" id="NvQ-6h-lNE"/>
-                            <constraint firstItem="Vzd-ne-LHi" firstAttribute="width" secondItem="Vzd-ne-LHi" secondAttribute="height" multiplier="247:254" id="kZO-n5-6Ya"/>
+                            <constraint firstItem="gar-M8-28R" firstAttribute="centerX" secondItem="4iH-Bx-7Kr" secondAttribute="centerX" id="m2B-JJ-d0V"/>
+                            <constraint firstItem="LkW-h3-2h3" firstAttribute="centerX" secondItem="4iH-Bx-7Kr" secondAttribute="centerX" id="mUp-lu-IUv"/>
+                            <constraint firstItem="0Mw-Vj-Xp1" firstAttribute="centerX" secondItem="4iH-Bx-7Kr" secondAttribute="centerX" id="muE-Fg-U4I"/>
+                            <constraint firstItem="Fbh-u9-L3k" firstAttribute="centerX" secondItem="4iH-Bx-7Kr" secondAttribute="centerX" id="ym4-Ie-z0E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="LkW-h3-2h3" id="OQA-4g-75J"/>
+                        <outlet property="dogePic" destination="LoN-gi-4FG" id="rfM-Vo-EKc"/>
+                        <outlet property="gridImage0" destination="PWf-od-1Tv" id="3Jr-ND-Qh7"/>
+                        <outlet property="gridImage1" destination="4Wo-Fg-hA5" id="zY5-CG-Uq7"/>
+                        <outlet property="gridImage2" destination="e9g-d6-L2Q" id="Xwg-3G-Pn4"/>
+                        <outlet property="gridImage3" destination="XQy-dK-1vU" id="iXo-kn-lhA"/>
+                        <outlet property="gridImage4" destination="ymm-MK-Oun" id="ReG-nZ-90N"/>
+                        <outlet property="gridImage5" destination="o8L-D0-LGJ" id="AX9-5q-FFC"/>
+                        <outlet property="gridImage6" destination="u5z-us-24e" id="K2D-uj-kVx"/>
+                        <outlet property="gridImage7" destination="Jnq-ZC-Bfg" id="gah-x4-xo2"/>
+                        <outlet property="gridImage8" destination="ZTr-fL-k0j" id="t0w-OU-Sba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhM-K3-YmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ndT-Gj-uBo">
+                    <pressTypeMask key="allowedPressTypes"/>
+                    <connections>
+                        <action selector="dogeWasDragged:" destination="l4v-ej-1AQ" id="KKb-hP-66o"/>
+                        <outlet property="delegate" destination="Fbh-u9-L3k" id="GCo-eo-Xo9"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="912" y="1019"/>
+            <point key="canvasLocation" x="981" y="1010"/>
         </scene>
         <!--Two Player View Controller-->
         <scene sceneID="2F1-a3-hZ7">
@@ -245,7 +326,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1705" y="317"/>
+            <point key="canvasLocation" x="1833" y="316"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iv9-oH-w75">
